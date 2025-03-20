@@ -1,0 +1,125 @@
+
+/* Font League Spartan */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* Overlay Pertama */
+section.overlay-first{
+    background: url(/assets/media/Ruangan\ pk.jpeg);
+    height: 500px;
+}
+
+section.overlay-first > div.overlaybg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(29, 23, 146, 1), rgba(0,0,0,0) );
+}
+
+/* Style Berita */
+section.overlay-news h1{
+    text-align: center;
+    margin: 10px;
+    color: #27388f;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'League Spartan';
+}
+
+.berita{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-news{
+    width: 200px;
+    height: 230px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    padding-top: 10px;
+    
+}
+
+article.item-news > h5{
+    width: 100%;
+    font-size: 10px;
+    height: 70px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    
+}
+
+button.btn-brt{
+    background-color: #27388f;
+    color: white;
+    width: 75%;
+    padding: 5px;
+    border-radius: 30px;
+}
+/*  */
+
+/* Style Jurusan */
+section.jurusan-trsd{
+    background-color: #1d1792;
+    color: white;
+}
+
+section.jurusan-trsd > h1{
+    padding: 25px;
+    text-align: center;
+}
+
+section.jurusan-trsd > article{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+section.jurusan-trsd > article > div{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;    
+}
+
+/* Style live count */
+aside.live-count{
+    width: 100%;
+    background-image: url(/assets/media/background\ buku.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+aside.live-count > div{
+    padding: 40px 25px 40px 25px;
+    margin: 25px;
+
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+
+    width: 150px;
+}
+
+aside.live-count > div > p{
+    text-align: center;
+    font-size: 9px;
+
+    margin-bottom: -29px;
+    margin-top: 28px;
+}
+
+/* Galeri */
+.Galer{
+    display: grid;
+    
+}
