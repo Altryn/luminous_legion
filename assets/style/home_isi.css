@@ -2,6 +2,10 @@
 /* Font League Spartan */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+body{
+    background-color: #fdffe2;
+}
+
 /* Overlay Pertama */
 section.overlay-first{
     background: url(/assets/media/Ruangan\ pk.jpeg);
@@ -17,6 +21,45 @@ section.overlay-first > div.overlaybg{
     text-align: center;
     color: white;
     background-image: linear-gradient(to bottom, rgba(29, 23, 146, 1), rgba(0,0,0,0) );
+}
+
+section.Sambutan{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+    padding: 70px 0 30px 70px;
+}
+/* Sambutan Kepsek */
+section.Sambutan > img{
+    border-radius: 50%;
+    margin-right: 25px;
+    width: 140px;
+    height: 140px;
+}
+
+section.Sambutan > div.sambutan-kpsk{
+    margin-left: 25px;
+    width: 50%;
+    font-family: sans-serif;
+}
+section.Sambutan > div.sambutan-kpsk > p{
+    padding: 10px 0 10px 0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+section.Sambutan > div.sambutan-kpsk > button{
+    background-color: #27388f;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.2s;
+}
+
+section.Sambutan > div.sambutan-kpsk > button:hover{
+    color: #ffeb00;
+    transition: 0.2s;
 }
 
 /* Style Berita */
@@ -62,8 +105,14 @@ button.btn-brt{
     width: 75%;
     padding: 5px;
     border-radius: 30px;
+    border: none;
+    transition: 0.2s;
 }
-/*  */
+
+button.btn-brt:hover{
+    color: #ffeb00;
+    transition: 0.2s;
+}
 
 /* Style Jurusan */
 section.jurusan-trsd{
