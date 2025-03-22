@@ -5,6 +5,9 @@
 /* Font Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --bg-element: #1d1792;
+}
 
 body{
     background-color: #fdffe2;
@@ -205,5 +208,83 @@ aside.live-count > div > p{
 /* Galeri */
 .Galer{
     display: grid;
-    
+    grid-template-columns: 100px 325px 325px 325px 100px;
+    grid-template-rows: 100px 360px 325px 120px;
+    justify-content: center;
+    gap: 10px;
 }
+
+section.Galer > h1{
+    font-family: 'Poppins';
+    color: #000957;
+    
+    
+    font-size: 30px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-self: center;
+    align-content: center;
+}
+section.Galer > h1::before{
+    content: '';
+    background-color: #ffeb00;
+    padding: 1px;
+    margin-right: 20px;
+}
+
+section.Galer > .img-utama{
+    width: 995px;
+    height: 360px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+section.Galer > .img-1,.img-2,.img-3{
+    width: 325px;
+    height: 325px;
+}
+
+section.Galer > .img-1{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+section.Galer > .img-2{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+section.Galer > .img-3{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+section.Galer > button{
+    justify-self: center;
+    align-self: center;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    height: 60px;
+    font-size: 20px;
+    background-color: #27388f;
+    color: white;
+    width: 50%;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.2s;
+}
+
+section.Galer > button:hover{
+    color: #ffeb00;
+    transition: 0.2s;
+}
+
+
