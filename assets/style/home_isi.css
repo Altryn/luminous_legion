@@ -271,7 +271,7 @@ section.Galer > button{
     grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 3;
-    height: 60px;
+    height: 40px;
     font-size: 20px;
     background-color: #27388f;
     color: white;
