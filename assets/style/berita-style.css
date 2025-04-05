@@ -1,0 +1,137 @@
+:root{
+    --bgmain: #fdffe2;
+    --bgelm: #1d1792;
+    /* hanya bgelm yang diconvert ke rgba */
+    --bgell: rgba(29, 23, 146, 0.8);
+    --bgmail: rgba(253, 255, 226, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgmain);
+}
+
+/* Isi webnya(Berita) */
+
+/* Main Beritanya */
+section{
+    width: 60%;
+
+    margin-top: -8.5vh;
+    float: right;
+}
+
+section > article{
+    
+    height: 400px;
+    width: 100%;
+    margin: auto 2.5% 45px 25%;
+    
+    background: url(/assets/media/Pameran\ tjkt.jpeg), no-repeat;
+    background-size: cover;
+
+    font-family: Arial;
+    color: white;
+
+    align-content: end;
+    text-align: center;
+    float: right;
+
+    border: 2px solid black;
+}
+
+
+/* Penjelasan Artikelanya */
+section > article > div{
+    text-align: left;
+    width: 100%;
+    padding: 7px;
+    background-color: rgba(253,255,226, 0.5);
+}
+section > article > div > h1{
+    font-size: 1.7em;
+    color: black;
+    padding-top: 7px;
+}
+section > article > div > h3{
+    background-color: red;
+    width: 12%;
+    border-radius: 10%;
+    padding: 5px;
+}
+section > article > div > p{
+    padding-top: 4px;
+    color: black;
+}
+/* Search Menu */
+.search-kolom{
+    width: 34%;
+    /* border: 1px solid black; */
+    height: 70px;
+    margin-left: 26px;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+input.search-bar{
+    width: 55%;
+    height: 1.5rem;
+    padding: 13px;
+    
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.side-news{
+    /* border: 1px solid black; */
+    float: left;
+
+    width: 24%;
+    position: relative;
+    margin-left: 90px;
+    
+}
+
+aside.side-news > article > img{
+    width: 75%;
+    padding: 15px 0;
+    justify-self: center;
+}
+
+aside.side-news > article > a{
+    color: var(--bgmain);
+    display: block;
+    border: 2px solid var(--bgmain);
+    background-color: var(--bgmail);
+    border-radius: 20px;
+    width: 80%;
+    justify-self: center;
+    padding: 6%;
+    margin-bottom: 6%;
+}
+
+aside.side-news > article > h1{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+aside.side-news > article{
+    font-family: Arial;
+    align-content: center;
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 11px;
+    margin-bottom: 45px;
+    text-wrap: wrap;
+    background-color: var(--bgelm);
+    color: white;
+}

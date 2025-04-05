@@ -1,7 +1,7 @@
 :root {
     --blue: #1d1792;
     --yellow: #f6e351;
-    --gray: #A2B29F;
+    --gray: #a2b29f;
     --white: #ffff;
     --black: #0000;
   }
@@ -12,6 +12,13 @@
     box-sizing: border-box;
   }
   
+  /* Deklarasi Header agar tidak overlapping dengan konten dibawahnya */
+  header, nav{
+    width: 100%;
+    height: 60px;
+  }
+
+
   /* navbar-logo */
   
   .logo {
@@ -41,6 +48,8 @@
     position: fixed;
     width: 100%;
     height: 60px;
+
+    z-index: 99999;
   }
     
   .navbar_list a {
